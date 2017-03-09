@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+# From https://github.com/mathiasbynens/dotfiles/blob/master/bootstrap.sh
+
+cd "$(dirname "${BASH_SOURCE}")";
+
+git pull origin master;
+
+rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
+    --exclude "README.md" --exclude "license" -avh --no-perms . ~;
+
 # This is a script to help setup my personal dev environment
 # At this point, it has never been run, and serves merely as
 # a walkthrough on what needs to be done.
@@ -24,7 +33,7 @@ if ! which zsh > /dev/null; then
 fi
 
 # Get zsh-syntax-highlighting
-git clone  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.misc/pretty
+brew install zsh-syntax-highlighting
 
 # Installing Python
 echo "Installing Python..."
@@ -44,17 +53,12 @@ git clone git://github.com/jeffbuttars/virtualcandy.git ~/.virtualcandy
 
 # Setup Vim
 echo "Installing Vim..."
-brew install vim
-brew install macvim
+brew install vim --override-system-vi
 git clone git@github.com:ntaylor89/vim.git ~/.misc
 source ~/.misc/install.sh
 
-# Install Ruby
-brew install ruby
-
 # Install RVM
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
+source ~/.rvm/scripts/rvm
 
-# Install other homebrew packages
-source brew-installs
 
