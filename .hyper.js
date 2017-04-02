@@ -9,7 +9,7 @@ module.exports = {
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
 
-		// custom css to embed in the main window
+	// custom css to embed in the main window
     css: '',
 
     // custom css to embed in the terminal window
@@ -33,11 +33,11 @@ module.exports = {
     bell: 'SOUND',
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false
+    copyOnSelect: false,
 
     // if true, on right click selected text will be copied or pasted if no
     // selection is present (true by default on Windows)
-    quickEdit: true
+    quickEdit: true,
   },
 
   // a list of plugins to fetch and install from npm

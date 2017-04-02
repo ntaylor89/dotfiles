@@ -3,7 +3,7 @@ My personal dotfiles.
 
 
 ## Installation
-__NOTE__: Most of this has not been tested. Hopefully, I'll get it working the next time I set up a new machine. At the very least, they serve as a template for what needs to be done to get up and running.
+__NOTE__: Most of this has been has been run, but in fragments. There are a few pieces that should probably be fixed up the next time I do a fresh install, but nothing should break in a huge way.
 
 ```
 git clone https://github.com/ntaylor89/dotfiles && cd $_

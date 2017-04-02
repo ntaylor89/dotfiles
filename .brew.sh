@@ -2,7 +2,6 @@
 
 # Adapted from: https://github.com/mathiasbynens/dotfiles/edit/master/brew.sh
 
-
 if ! type brew >/dev/null 2>&1; then
   >&2 echo "ERROR: Homebrew must be installed before running this script."
   exit 1
