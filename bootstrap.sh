@@ -7,7 +7,9 @@ cd "$(dirname "${BASH_SOURCE}")";
 git pull origin master;
 
 rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-    --exclude "README.md" --exclude "license" -avh --no-perms . ~;
+    --exclude "README.md" --exclude "license" --exculde ".brew.sh" \
+    --exclude ".cask.sh" --exclude ".apm.sh" --exclude ".atom_config"-avh \
+    --no-perms . ~;
 
 # This is a script to help setup my personal dev environment
 # At this point, it has never been run, and serves merely as
@@ -18,13 +20,13 @@ rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
 cd && mkdir Workspace Playground bin .misc .misc/pretty
 
 # Install Homebrew
-if ! which brew; then
+if ! type brew >/dev/null 2>&1; then
   echo "Installing Homebew..."
  yes '' | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # Install zsh
-if ! which zsh > /dev/null; then
+if ! type zsh >/dev/null 2>&1; then
   echo "Installing Zsh..."
   brew install zsh zsh-completions
 
@@ -60,5 +62,4 @@ source ~/.misc/install.sh
 # Install RVM
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 source ~/.rvm/scripts/rvm
-
 

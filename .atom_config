@@ -1,0 +1,21 @@
+"*":
+  core:
+    disabledPackages: [
+      "language-gfm"
+    ]
+    projectHome: "/Users/ntaylor/Workspace"
+    telemetryConsent: "limited"
+    themes: [
+      "spacegray-dark-ui"
+      "solarized-dark-syntax"
+    ]
+    useCustomTitleBar: true
+  editor:
+    fontFamily: "meslo LG S DZ for Powerline"
+    fontSize: 11
+  "exception-reporting":
+    userId: "25841148-36cc-4fd9-91ec-a61db4c1e141"
+  "linter-ui-default": {}
+  "markdown-preview": {}
+  "markdown-preview-plus":
+    useGitHubStyle: true
