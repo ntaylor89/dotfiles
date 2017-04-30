@@ -22,6 +22,7 @@ brew cask install github-desktop
 brew cask install google-chrome
 brew cask install hyper
 brew cask install iterm2
+brew cask install keka
 brew cask install macdown
 brew cask install postgres
 brew cask install postman

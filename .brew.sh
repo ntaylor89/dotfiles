@@ -66,6 +66,7 @@ brew install speedtest_cli
 brew install ssh-copy-id
 brew install tmux
 brew install tree
+brew install unrar
 brew install webkit2png
 brew install xz
 brew install zopfli
