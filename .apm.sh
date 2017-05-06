@@ -38,6 +38,7 @@ apm install markdown-pdf
 apm install project-manager
 apm install emmet
 apm install rails-snippets
+apm install atom-tachyons
 
 # Copy over atom config
 cp .atom_config ~/.atom/config.cson
