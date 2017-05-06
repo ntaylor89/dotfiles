@@ -25,6 +25,10 @@ apm install minimap
 apm install pigments
 apm install minimap-pigments
 
+# React Support
+apm install language-babel
+apm install react-snippets
+
 # Markdown Support
 apm install language-markdown
 apm install markdown-pdf
