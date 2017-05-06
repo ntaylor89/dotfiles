@@ -27,6 +27,7 @@ apm install minimap-pigments
 
 # React Support
 apm install language-babel
+apm install language-javascript-jsx
 apm install react-snippets
 
 # Markdown Support
