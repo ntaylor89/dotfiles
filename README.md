@@ -20,6 +20,21 @@ source bootstrap.sh
 ./.cask.sh
 ```
 
+### atom config
+```
+./.apm.sh
+```
+
+### hyper config
+```
+./hpm.sh
+```
+
+### NPM installs
+```
+./.npm.sh
+```
+
 ## Acknowledgements
 Adapted from the following sources:
 - https://github.com/mathiasbynens/dotfiles

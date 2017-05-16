@@ -4,17 +4,18 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-# git pull origin master;
+# Update this repo
+git pull origin master;
 
-# rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-#    --exclude "README.md" --exclude "license" --exculde ".brew.sh" \
-#    --exclude ".cask.sh" --exclude ".apm.sh" --exclude ".atom_config"-avh \
-#    --no-perms . ~;
+# Copy dotfiles over to home directory
+rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
+      --exclude "README.md" --exclude "license" --exculde ".brew.sh" \
+      --exclude ".cask.sh" --exclude ".apm.sh" --exclude ".hpm.sh" --exclude ".atom_config"-avh \
+      --no-perms . ~;
 
 # This is a script to help setup my personal dev environment
-# At this point, it has never been run, and serves merely as
-# a walkthrough on what needs to be done.
-# Hopefully, the next time I set up a machine, I can fix it up
+# This has been _mostly_ tested, but there may be some minor
+# issues. Use are your own peril.
 
 # Setup folders
 cd # && mkdir Workspace Playground bin .misc .misc/pretty
