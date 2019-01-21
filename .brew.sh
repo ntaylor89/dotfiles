@@ -41,38 +41,38 @@ brew install wget --with-iri
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
-brew install macvim
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
+# brew install macvim
+# brew install homebrew/dupes/grep
+# brew install homebrew/dupes/openssh
+# brew install homebrew/dupes/screen
 
 # Install other useful binaries
 brew install dark-mode
 
-brew install lua
+# brew install lua
 brew install node
 brew install ruby
 
 brew install ack
-brew install gawx
+brew install gawk
 brew install jq
 brew install openssl
 brew install p7zip
-brew install pigz
-brew install pv
-brew install rhino
+# brew install pigz
+# brew install pv
+# brew install rhino
 brew install rename
-brew install speedtest_cli
-brew install ssh-copy-id
+# brew install speedtest_cli
+# brew install ssh-copy-id
 brew install tmux
 brew install tree
 brew install unrar
-brew install webkit2png
-brew install xz
-brew install zopfli
+# brew install webkit2png
+# brew install xz
+brew install yarn
+# brew install zopfli
 
 brew install git
-brew install git-lfs
 brew install hub
 brew install heroku
 

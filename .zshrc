@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/ntaylor/.oh-my-zsh
+export ZSH=/Users/$(whoami)/.oh-my-zsh
 
 DEFAULT_USER=$(whoami)
 
@@ -69,10 +69,10 @@ alias docker-up='eval $(docker-machine env)'
 alias docker-kill-latest='docker kill $(docker ps -l -q)'
 
 # Virtualcandy Configuration
-source ~/.virtualcandy/src/virtualcandy.zsh
-VC_DEFAULT_VENV_NAME='.venv'
-VC_DEFAULT_VENV_REQFILE='requirements.txt'
-VC_AUTO_ACTIVATION=true
+# source ~/.virtualcandy/src/virtualcandy.zsh
+# VC_DEFAULT_VENV_NAME='.venv'
+# VC_DEFAULT_VENV_REQFILE='requirements.txt'
+# VC_AUTO_ACTIVATION=true
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
