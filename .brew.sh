@@ -75,7 +75,7 @@ brew install hub
 brew tap heroku/brew && brew install heroku
 
 brew install ffmpeg
-brew install imagemagick --with-webp
+brew install imagemagick
 
 # Remove outdated versions from the cellar
 brew cleanup
