@@ -26,7 +26,7 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 
 # Install Bash 4.
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
@@ -36,11 +36,7 @@ brew tap homebrew/versions
 brew install bash-completion2
 # sudo echo "/usr/local/bin/bash" >> /etc/shells
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
-
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
 # brew install macvim
 # brew install homebrew/dupes/grep
 # brew install homebrew/dupes/openssh
@@ -69,6 +65,8 @@ brew install tree
 brew install unrar
 # brew install webkit2png
 # brew install xz
+brew install vim
+brew install wget
 brew install yarn
 # brew install zopfli
 
