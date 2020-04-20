@@ -72,7 +72,7 @@ brew install yarn
 
 brew install git
 brew install hub
-brew install heroku
+brew tap heroku/brew && brew install heroku
 
 brew install ffmpeg
 brew install imagemagick --with-webp
