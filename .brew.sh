@@ -19,7 +19,7 @@ brew update && brew upgrade
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
-sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
+# sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
@@ -28,12 +28,10 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed
 
-# Install Bash 4.
+# Install Latest Bash.
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
-brew tap homebrew/versions
-brew install bash-completion2
 # sudo echo "/usr/local/bin/bash" >> /etc/shells
 
 # Install more recent versions of some OS X tools.
@@ -52,7 +50,7 @@ brew install ruby
 brew install ack
 brew install gawk
 brew install jq
-brew install openssl
+# brew install openssl
 brew install p7zip
 # brew install pigz
 # brew install pv
@@ -65,7 +63,7 @@ brew install tree
 brew install unrar
 # brew install webkit2png
 # brew install xz
-brew install vim
+# brew install vim
 brew install wget
 brew install yarn
 # brew install zopfli

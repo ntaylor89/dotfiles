@@ -12,31 +12,33 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Development Tools
-brew cask install atom
-brew cask install docker
-brew cask install filezilla
-brew cask install github
-brew cask install google-chrome
-brew cask install hyper
-brew cask install insomnia
-brew cask install keka
-brew cask install macdown
-brew cask install postgres && sudo mkdir -p /etc/paths.d && \
+brew install --cask atom
+brew install --cask docker
+brew install --cask filezilla
+brew install --cask github
+brew install --cask google-chrome
+brew install --cask hyper
+brew install --cask insomnia
+brew install --cask keka
+brew install --cask macdown
+brew install --cask postgres && sudo mkdir -p /etc/paths.d && \
   echo /Applications/Postgres.app/Contents/Versions/latest/bin \
   | sudo tee /etc/paths.d/postgresapp
-brew cask install textmate
-brew cask install virtualbox
-brew cask install vagrant
-brew cask install wireshark
+brew install --cask redis
+brew install --cask textmate
+brew install --cask virtualbox
+brew install --cask vagrant
+brew install --cask wireshark
 
 # Misc
-brew cask install alfred
-brew cask install dropbox
-brew cask install google-backup-and-sync
-brew cask install openemu
-brew cask install spotify
-brew cask install steam
-brew cask install vlc
+brew install --cask alfred
+brew install --cask dropbox
+brew install --cask google-backup-and-sync
+brew install --cask openemu
+brew install --cask notion
+brew install --cask spotify
+brew install --cask steam
+brew install --cask vlc
 
-brew cleanup
+brew cleanup cask
 

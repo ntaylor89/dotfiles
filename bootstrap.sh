@@ -34,13 +34,13 @@ fi
 # Install zsh
 #  echo "installing Oh-My-Zsh..."
 # brew install zsh
+# chsh -s $(which zsh) # may need to do not as sudo
 #  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 #  brew install zsh-completions
 
 # Get zsh-syntax-highlighting
 # brew install zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git .misc/pretty/
-zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git .misc/pretty/zsh-syntax-highlighting
 
 # Installing Python
 echo "Installing Python..."
@@ -60,13 +60,16 @@ git clone https://github.com/altercation/solarized.git ~/.misc/pretty/solarized
 
 # Setup Vim
 echo "Installing Vim..."
-brew install vim --with-override-system-vi
+brew install vim
 git clone https://github.com/ntaylor89/vim.git ~/.misc/vim
 source ~/.misc/vim/install.sh
 
 # Install RVM
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 source ~/.rvm/scripts/rvm
+
+# Install Node
+brew install node
 
 echo "Done"
 

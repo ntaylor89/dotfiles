@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-npm install -g create-react-app
-npm install -g create-react-native-app
-npm install -g spot
+npm i -g yarn
+npm i -g create-react-app
+npm i -g create-react-native-app
+npm i -g spot
 
