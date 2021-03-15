@@ -33,10 +33,11 @@ fi
 
 # Install zsh
 #  echo "installing Oh-My-Zsh..."
-# brew install zsh
-# chsh -s $(which zsh) # may need to do not as sudo
-#  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+brew install zsh
+# chsh -s $(which zsh)
+ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 #  brew install zsh-completions
+cp alias.zsh ~/.oh-my-zsh/custom/alias.zsh
 
 # Get zsh-syntax-highlighting
 # brew install zsh-syntax-highlighting
@@ -52,12 +53,6 @@ pip3 install --user powerline-status
 # Install Powerline Fonts
 git clone https://github.com/powerline/fonts.git ~/.misc/pretty/powerline-fonts && ~/.misc/pretty/powerline-fonts/install.sh
 
-# Get Solarized Color Themes
-git clone https://github.com/altercation/solarized.git ~/.misc/pretty/solarized
-
-# Get Virtualcandy for Python
-# git clone git://github.com/jeffbuttars/virtualcandy.git ~/.virtualcandy
-
 # Setup Vim
 echo "Installing Vim..."
 brew install vim
@@ -65,11 +60,9 @@ git clone https://github.com/ntaylor89/vim.git ~/.misc/vim
 source ~/.misc/vim/install.sh
 
 # Install RVM
+brew install gpg2
+gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 source ~/.rvm/scripts/rvm
 
-# Install Node
-brew install node
-
 echo "Done"
-

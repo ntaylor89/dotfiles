@@ -25,7 +25,7 @@ brew install coreutils
 brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
-# Install GNU `sed`, overwriting the built-in `sed`.
+# Install GNU `sed`
 brew install gnu-sed
 
 # Install Latest Bash.
@@ -33,12 +33,6 @@ brew install gnu-sed
 # running `chsh`.
 brew install bash
 # sudo echo "/usr/local/bin/bash" >> /etc/shells
-
-# Install more recent versions of some OS X tools.
-# brew install macvim
-# brew install homebrew/dupes/grep
-# brew install homebrew/dupes/openssh
-# brew install homebrew/dupes/screen
 
 # Install other useful binaries
 brew install dark-mode
@@ -65,7 +59,6 @@ brew install unrar
 # brew install xz
 # brew install vim
 brew install wget
-brew install yarn
 # brew install zopfli
 
 brew install git
@@ -77,4 +70,3 @@ brew install imagemagick
 
 # Remove outdated versions from the cellar
 brew cleanup
-

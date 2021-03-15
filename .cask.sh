@@ -19,8 +19,10 @@ brew install --cask github
 brew install --cask google-chrome
 brew install --cask hyper
 brew install --cask insomnia
+brew install --cask handbrake
 brew install --cask keka
 brew install --cask macdown
+brew install --cask now
 brew install --cask postgres && sudo mkdir -p /etc/paths.d && \
   echo /Applications/Postgres.app/Contents/Versions/latest/bin \
   | sudo tee /etc/paths.d/postgresapp
@@ -41,4 +43,3 @@ brew install --cask steam
 brew install --cask vlc
 
 brew cleanup cask
-

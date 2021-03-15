@@ -30,7 +30,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git lol ruby rails osx postgres zsh-syntax-highlighting)
+plugins=(git ruby)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.misc/pretty/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -76,4 +76,3 @@ alias docker-kill-latest='docker kill $(docker ps -l -q)'
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
