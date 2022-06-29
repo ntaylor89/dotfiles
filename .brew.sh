@@ -63,6 +63,7 @@ brew install wget
 
 brew install git
 brew install hub
+brew install gh
 brew tap heroku/brew && brew install heroku
 
 brew install ffmpeg

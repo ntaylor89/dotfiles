@@ -21,6 +21,7 @@ brew install --cask hyper
 brew install --cask insomnia
 brew install --cask handbrake
 brew install --cask keka
+brew install --cask kindle
 brew install --cask macdown
 brew install --cask now
 brew install --cask postgres && sudo mkdir -p /etc/paths.d && \
